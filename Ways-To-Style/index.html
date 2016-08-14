@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ways to Style</title>
+	<!-- 1. Embedded -->
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		.container {
+			width: 90%;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			border: 1px solid #ccc;
+		}
+	</style>
+	<!-- 2. Linked Styles -->
+		<!-- 2.1 local -->
+		<link rel="stylesheet" href="style.css">
+		<!-- 2.2 External (Bootstrap) -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container">
+
+		<!-- This h1 is getting styles from bootstrap -->
+		<h1>Styled with Bootstrap (external link)</h1>
+
+		<!-- This p is getting styles from the linked styles.css -->
+		<p class="copy">Styled with local .css   <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sed quas iste voluptas voluptates tempora doloremque autem ipsa quod nam, iusto quia error nihil officia sunt cumque alias facere veritatis.</p>
+
+		<!-- 3. Inline -->
+		<p style="padding:20px; color:#444">Styled inline <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nisi officiis praesentium sint dolore magnam blanditiis ipsam quia autem, distinctio quasi tempora beatae in similique odio quaerat est accusamus laborum!</p>
+		
+		<p id="modified-with-js">Styled with javascript (results in inline)</p>
+	</div>
+
+	
+
+	<script>
+		document.getElementById("modified-with-js").style.color = "blue";
+	</script>
+
+</body>
+</html>
+
+
+
+
