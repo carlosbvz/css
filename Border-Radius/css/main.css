@@ -1,0 +1,40 @@
+/* 
+* General styles
+*/
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.containers-style {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.row{
+	width: 100%;
+	margin: 10px 0;
+}
+
+/*
+* Border Styles
+*/
+
+
+.border-complete {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.border-irregular{
+	border-radius: 5px 10px 15px 20px;
+}
+
+.border-left-top{
+	border-top-left-radius: 10px;
+}
+
+.circle{
+	border-radius: 50%;
+}
