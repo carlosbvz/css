@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+header .header--column {
+  display: inline-block; }
+header .header--column-right, header .header--column-left {
+  width: 20%; }
+header .header--column-center {
+  width: 50%; }
+header .header--column-left ul {
+  list-style-type: none; }
+  header .header--column-left ul li {
+    display: inline; }
+    header .header--column-left ul li a {
+      color: #ccc;
+      text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */
