@@ -1,0 +1,57 @@
+/* 
+* General styles
+*/
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+.containers-style {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /*See the event*/
+    transition: all 2s;
+}
+
+.row{
+	width: 100%;
+	margin: 10px 0;
+}
+
+/*
+* Simple transform
+*/
+
+.animation-translate:hover{
+    transform: translate(25px, 50px);
+}
+
+.animation-rotate:hover{
+    transform: rotate(360deg);
+}
+
+.animation-scale:hover{
+    transform: scale(2);
+}
+
+.animation-skewx:hover{
+    transform: skewX(20deg);
+}
+
+.animation-skewy:hover{
+    transform: skewY(20deg);
+}
+
+.animation-skew:hover{
+    transform: skew(30deg, 30deg);
+}
+
+.animation-matrix:hover{
+    transform: matrix(0.5, 0.3, -1, 0, 2, 1);
+}
+
+
+
+
