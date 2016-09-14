@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Specificity</title>
+    <style>
+        .orange {
+            /*color: orange !important;*/
+            color: orange;
+        }
+        .red {
+            color: red;
+        }
+        #blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <p class="red orange" id="blue">Hello World!</p>
+    <br>
+    <button onclick="changeColor()" >Change Color to Green</button>
+
+    <script>
+        function changeColor() {
+            document.getElementById('blue').style.color = 'green';
+            
+        }
+    </script>
+
+</body>
+</html>
+
+
+<!--
+    class < id < inline style < !important
+
+-->
