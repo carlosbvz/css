@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clearfix</title>
+    <style>
+        .wrapper {
+            border: 1px solid;
+            width: 100%;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            /*width: 50%;*/
+        }
+        .box--red {
+            background-color: red;
+        }
+        .box--blue {
+            background-color: blue;
+        }
+        .box--left {
+            float: left;
+        }
+        .box--right {
+            float: right;
+        }
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper clearfix">
+        <div class="box box--red box--left"></div>
+        <div class="box box--blue box--right"></div>
+    </div>
+
+</body>
+</html>

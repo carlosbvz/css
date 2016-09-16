@@ -1,0 +1,62 @@
+/* Stacking context demo */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+html {
+	min-height: 100%;
+	font: 100%/1.5 Proxima Nova, proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+	background: -webkit-linear-gradient(hsl(200,30%,80%), #fff 400px);
+	-webkit-font-smoothing: antialiased;
+	color: #001e5b;
+}
+
+body {
+	margin: 120px auto;
+	max-width: 600px;
+	-webkit-transform: translate3d(0,0,0);
+	text-align: center;
+}
+
+div {
+	width: 320px;
+	background: #fefeff;
+	padding: 20px;
+	margin: 48px auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	position: relative;
+	border: 3px solid green;
+}
+
+div::before, div::after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #fefeff;
+	border-radius: 5px;
+	z-index: -1;
+	transform: rotate(-3deg);
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	outline:1px solid red;
+}
+
+div::after {
+	transform: rotate(2deg);
+	outline-color: blue
+}
+
+div ~ div {
+	transform: rotate(0deg);
+}
+

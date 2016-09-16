@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <title>Specificity</title>
     <style>
+
+       
         .orange {
-            /*color: orange !important;*/
-            color: orange;
+            color: orange !important;
+            /*color: orange;*/
+        }
+         #blue {
+            color: blue;
         }
         .red {
             color: red;
-        }
-        #blue {
-            color: blue;
         }
     </style>
 </head>
 <body>
     
-    <p class="red orange" id="blue">Hello World!</p>
+    <p  class="red orange" id="blue" style="" title="hi!" >Hello World!</p>
     <br>
     <button onclick="changeColor()" >Change Color to Green</button>
 
     <script>
         function changeColor() {
             document.getElementById('blue').style.color = 'green';
-            
         }
     </script>
 
@@ -37,3 +38,21 @@
     class < id < inline style < !important
 
 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

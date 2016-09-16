@@ -1,0 +1,26 @@
+nav {
+    /*Rules...*/
+}
+
+nav ul {
+/*Rules...*/
+}
+
+nav ul li {
+/*Rules...*/
+}
+
+nav ul li a {
+/*Rules...*/
+}
+
+//  Refactored
+$purple-light: #967;
+
+nav {
+    ul {
+        li {
+            color: $purple-light;
+        }
+    }
+}
